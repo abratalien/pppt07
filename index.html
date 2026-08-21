@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTRE Telemetry Output Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 24px; line-height: 1.5; }
+        h1 { color: #58a6ff; margin-bottom: 8px; font-size: 1.8rem; }
+        p.subtitle { color: #8b949e; margin-bottom: 24px; font-size: 0.95rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; }
+        
+        .card-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; margin-bottom: 8px; }
+        .metric-value { font-size: 1.8rem; font-weight: 600; color: #f0f6fc; }
+        
+        .status-badge { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 600; }
+        .status-badge.active { background-color: rgba(46, 160, 67, 0.15); color: #3fb950; border: 1px solid rgba(46, 160, 67, 0.4); }
+        .status-badge.alert { background-color: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.4); }
+        
+        .protocol-tag { color: #d2a8ff; font-family: monospace; font-size: 1rem; }
+        
+        .section-header { color: #f0f6fc; font-size: 1.2rem; margin-bottom: 12px; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+        
+        .evidence-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 16px; }
+        .evidence-card img { width: 100%; border: 1px solid #30363d; border-radius: 6px; background-color: #010409; }
+    </style>
+</head>
+<body>
+
+    <h1>GTRE Telemetry Output Dashboard</h1>
+    <p class="subtitle">Real-Time Cyber-Physical Telemetry & Threat Monitoring System</p>
+
+    <!-- SYSTEM METRICS OVERVIEW -->
+    <div class="grid">
+        <div class="card">
+            <div class="card-title">System Health</div>
+            <div class="metric-value"><span class="status-badge active">● Operational</span></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Encryption Standard</div>
+            <div class="metric-value protocol-tag">AES-256-GCM</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Anti-Replay Engine</div>
+            <div class="metric-value"><span class="status-badge active">Sequence Verification Active</span></div>
+        </div>
+        <div class="card">
+            <div class="card-title">Anomaly Detection Engine</div>
+            <div class="metric-value"><span class="status-badge active">Threshold Check Active</span></div>
+        </div>
+    </div>
+
+    <!-- TERMINAL DEMONSTRATION EVIDENCE -->
+    <div class="card">
+        <div class="section-header">Live Execution Logs</div>
+        <div class="evidence-grid">
+            <div class="evidence-card">
+                <p class="card-title" style="margin-bottom: 8px;">Threat Simulator Output (Phase 1 and 2)</p>
+                <img src="p77/o1.png" alt="Phase 3 Threat Attack Execution Log" onerror="this.onerror=null; this.parentElement.innerHTML += '<p style=\'color:#8b949e; padding: 20px;\'>Drop o1.png into p77/ directory to display image</p>'">
+            </div>
+            <div class="evidence-card">
+                <p class="card-title" style="margin-bottom: 8px;">Dynamic Anomaly Stream Log (Phase 1 and 2)</p>
+                <img src="p77/o2.png" alt="Phase 4 Dynamic Anomaly Detection Log" onerror="this.onerror=null; this.parentElement.innerHTML += '<p style=\'color:#8b949e; padding: 20px;\'>Drop o2.png into p77/ directory to display image</p>'">
+            </div>
+             <div class="evidence-card">
+                <p class="card-title" style="margin-bottom: 8px;">Dynamic Anomaly Stream Log (Phase 3)</p>
+                <img src="p77/o3(1).png" alt="Phase 4 Dynamic Anomaly Detection Log" onerror="this.onerror=null; this.parentElement.innerHTML += '<p style=\'color:#8b949e; padding: 20px;\'>Drop o2.png into p77/ directory to display image</p>'">
+            </div>   
+             <div class="evidence-card">
+                <p class="card-title" style="margin-bottom: 8px;">Dynamic Anomaly Stream Log (Phase 3)</p>
+                <img src="p77/o3(2).png" alt="Phase 4 Dynamic Anomaly Detection Log" onerror="this.onerror=null; this.parentElement.innerHTML += '<p style=\'color:#8b949e; padding: 20px;\'>Drop o2.png into p77/ directory to display image</p>'">
+            </div>
+             <div class="evidence-card">
+                <p class="card-title" style="margin-bottom: 8px;">Dynamic Anomaly Stream Log (Phase 4)</p>
+                <img src="p77/o4.png" alt="Phase 4 Dynamic Anomaly Detection Log" onerror="this.onerror=null; this.parentElement.innerHTML += '<p style=\'color:#8b949e; padding: 20px;\'>Drop o2.png into p77/ directory to display image</p>'">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
